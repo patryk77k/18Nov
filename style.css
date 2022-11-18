@@ -14,7 +14,9 @@ nav {
 }
 
 ul {
-    border: 2px solid green;
+    display: flex;
+    justify-content: space-between; 
+}
 }
 
 li {
@@ -26,7 +28,8 @@ header {
 }
 
 #duck {
-    border: 2px solid yellow;
+    display: flex;
+
 }
 
 .text {
@@ -46,15 +49,23 @@ header {
 }
 
 .grid-container {
-    border: 2px solid blue;
-
+    border: solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .grid-item {
-    border: 2px solid pink;
-
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
 }
-
 footer {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
